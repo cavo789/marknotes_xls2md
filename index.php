@@ -63,22 +63,23 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
 					<details>
 						<summary>How to use?</summary>
 						<div class="container-fluid">
-						<div class="row">
-							<div class="col-sm">
-								<ol>
-									<li>In your Excel worksheet, select a range like f.i. 
-										$A$1:$H:$25 (first row need to contains column's headings).</li>
-									<li>Press <kbd>CTRL</kbd><kbd>C</kbd></li>
-									<li>In this form, click in the text area here below</li>
-									<li>Press <kbd>CTRL</kbd><kbd>V</kbd></li>
-								</ol>
-								<p>The copied data will be immediately converted to a markdown table 
-									and a HTML preview will be rendered.</p>
-								<p>Adjust the markdown syntax if needed and copy/paste into your 
-									notes.</p>
-							</div>
-							<div class="col-sm">
-								<img height="300px" src="https://raw.githubusercontent.com/cavo789/marknotes_xls2md/master/image/demo.gif" alt="Demo">
+							<div class="row">
+								<div class="col-sm">
+									<ol>
+										<li>In your Excel worksheet, select a range like f.i. 
+											$A$1:$H:$25 (first row need to contains column's headings).</li>
+										<li>Press <kbd>CTRL</kbd><kbd>C</kbd></li>
+										<li>In this form, click in the text area here below</li>
+										<li>Press <kbd>CTRL</kbd><kbd>V</kbd></li>
+									</ol>
+									<p>The copied data will be immediately converted to a markdown table 
+										and a HTML preview will be rendered.</p>
+									<p>Adjust the markdown syntax if needed and copy/paste into your 
+										notes.</p>
+								</div>
+								<div class="col-sm">
+									<img height="300px" src="https://raw.githubusercontent.com/cavo789/marknotes_xls2md/master/image/demo.gif" alt="Demo">
+								</div>
 							</div>
 						</div>
 					</details>
