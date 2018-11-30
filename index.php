@@ -72,7 +72,7 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
 									<li>In this form, click in the text area here below</li>
 									<li>Press <kbd>CTRL</kbd><kbd>V</kbd></li>
 								</ol>
-								<p>The copied data will be immediately converted to a markdown array 
+								<p>The copied data will be immediately converted to a markdown table 
 									and a HTML preview will be rendered.</p>
 								<p>Adjust the markdown syntax if needed and copy/paste into your 
 									notes.</p>
@@ -85,7 +85,7 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
 					<textarea class="form-control" rows="10" id="editor" name="editor"></textarea>
 				</div>
 				<hr/>
-				<pre id="Markdown"></pre>
+				<pre id="Markdown">&nbsp;</pre>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="text/javascript"></script>
