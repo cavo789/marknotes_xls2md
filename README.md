@@ -4,13 +4,11 @@
 
 Simply copy, from Excel, a table and paste here to convert table to markdown.
 
-![demo.gif](image/demo.gif)
-
 ## How to use
 
 In Excel, select your table (f.i. the range `$A$1:$J:$50`), press <kbd>CTRL+C</kbd> and paste the clipboard in the textarea (press <kbd>CTRL+V</kbd>) to get the markdown rendering.
 
-![xls2md](images/xls2md.png)
+![demo.gif](image/demo.gif)
 
 ## Source
 
