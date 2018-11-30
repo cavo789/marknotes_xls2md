@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
-/**
+/*
  * AUTHOR : AVONTURE Christophe
  *
  * Written date : 3 october 2018
@@ -45,7 +45,12 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
 				margin-top:10px;
 				font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
 			}
-
+			details {
+				margin: 1rem;
+			}
+			summary {
+				font-weight: bold;
+			}
 			.form-control {
 				padding: none;
 				font-size: 0.8em;
