@@ -66,9 +66,21 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
             <div class="page-header"><h1>Marknotes - XLS2MD</h1></div>
             <div class="container" id="app">
                 <div class="form-group">
+                    <how-to-use demo="https://raw.githubusercontent.com/cavo789/marknotes_xls2md/master/image/demo.gif">
+                        <ol>
+                            <li>In your Excel worksheet, select a range like f.i. 
+                                $A$1:$H:$25 (first row need to contains column's headings).</li>
+                            <li>Press <kbd>CTRL</kbd><kbd>C</kbd></li>
+                            <li>In this form, click in the text area here below</li>
+                            <li>Press <kbd>CTRL</kbd><kbd>V</kbd></li>
+                        </ol>
+                        <p>The copied data will be immediately converted to a markdown table 
+                            and a HTML preview will be rendered.</p>
+                        <p>Adjust the markdown syntax if needed and copy/paste into your 
+                            notes.</p>
+                    </how-to-use>
                     <label for="editor">Simply copy, from Excel, a table and paste here to convert 
                         table to markdown.</label>
-                    <how-to-use demo="https://raw.githubusercontent.com/cavo789/marknotes_xls2md/master/image/demo.gif"></how-to-use>
                     <textarea class="form-control" rows="5" v-model="editor" name="editor" @change="onChange" @paste="onPaste"></textarea>
                 </div>
                 <hr/>
@@ -154,17 +166,7 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
                         <summary>How to use?</summary>
                         <div class="row">
                                 <div class="col-sm">
-                                    <ol>
-                                        <li>In your Excel worksheet, select a range like f.i. 
-                                            $A$1:$H:$25 (first row need to contains column's headings).</li>
-                                        <li>Press <kbd>CTRL</kbd><kbd>C</kbd></li>
-                                        <li>In this form, click in the text area here below</li>
-                                        <li>Press <kbd>CTRL</kbd><kbd>V</kbd></li>
-                                    </ol>
-                                    <p>The copied data will be immediately converted to a markdown table 
-                                        and a HTML preview will be rendered.</p>
-                                    <p>Adjust the markdown syntax if needed and copy/paste into your 
-                                        notes.</p>
+                                    <slot></slot>
                                 </div>
                                 <div class="col-sm"><img v-bind:src="demo" alt="Demo"></div>
                             </div>
