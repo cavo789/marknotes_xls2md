@@ -1,6 +1,6 @@
-![banner](image/banner.jpg)
-
 # marknotes_xls2md
+
+![banner](./banner.svg)
 
 > Excel raw table to markdown converter.
 
