@@ -68,18 +68,18 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
                 <div class="form-group">
                     <how-to-use demo="https://raw.githubusercontent.com/cavo789/marknotes_xls2md/master/image/demo.gif">
                         <ol>
-                            <li>In your Excel worksheet, select a range like f.i. 
+                            <li>In your Excel worksheet, select a range like f.i.
                                 $A$1:$H:$25 (first row need to contains column's headings).</li>
                             <li>Press <kbd>CTRL</kbd><kbd>C</kbd></li>
                             <li>In this form, click in the text area here below</li>
                             <li>Press <kbd>CTRL</kbd><kbd>V</kbd></li>
                         </ol>
-                        <p>The copied data will be immediately converted to a markdown table 
+                        <p>The copied data will be immediately converted to a markdown table
                             and a HTML preview will be rendered.</p>
-                        <p>Adjust the markdown syntax if needed and copy/paste into your 
+                        <p>Adjust the markdown syntax if needed and copy/paste into your
                             notes.</p>
                     </how-to-use>
-                    <label for="editor">Simply copy, from Excel, a table and paste here to convert 
+                    <label for="editor">Simply copy, from Excel, a table and paste here to convert
                         table to markdown.</label>
                     <textarea class="form-control" rows="5" v-model="editor" name="editor" @change="onChange" @paste="onPaste"></textarea>
                 </div>
@@ -96,7 +96,7 @@ if (is_file($cat = __DIR__ . DIRECTORY_SEPARATOR . 'octocat.tmpl')) {
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue@2"></script>
         <script src="https://unpkg.com/marked@0.3.6"></script>
         <script type="text/javascript">
 
